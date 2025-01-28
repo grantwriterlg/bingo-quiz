@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Bingo Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    #questions {
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      max-width: 500px;
+    }
+
+    .cell {
+      padding: 20px;
+      background-color: #fff;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.2s;
+    }
+
+    .cell:hover {
+      background-color: #e0ffe0;
+      border-color: #4caf50;
+    }
+
+    .cell.correct {
+      background-color: #4caf50;
+      color: white;
+      border-color: #4caf50;
+    }
+  </style>
+</head>
+<body>
+  <h1>Grossmont College Quiz</h1>
+  <p>Click on the questions to reveal the answers!</p>
+  <div id="questions">
+    <div class="cell" onclick="this.innerHTML='Career Technical Education'; this.classList.add('correct');">
+      What is CTE?
+    </div>
+    <div class="cell" onclick="this.innerHTML='The Griffin'; this.classList.add('correct');">
+      What is the mascot of Grossmont College?
+    </div>
+    <div class="cell" onclick="this.innerHTML='16,000'; this.classList.add('correct');">
+      How many students did the president say are enrolled?
+    </div>
+    <div class="cell" onclick="this.innerHTML='15 percent'; this.classList.add('correct');">
+      How much more do we need to grow to reach pre-pandemic levels?
+    </div>
+    <div class="cell" onclick="this.innerHTML='To get our communities to work and transfer'; this.classList.add('correct');">
+      What is the mission of the CTEWD Division?
+    </div>
+    <div class="cell" onclick="this.innerHTML='Griffin Works'; this.classList.add('correct');">
+      What is the newest internship program at Grossmont College in CTEWD?
+    </div>
+    <div class="cell" onclick="this.innerHTML='Lifespan Leadership'; this.classList.add('correct');">
+      What book did the dean write about leadership?
+    </div>
+    <div class="cell" onclick="this.innerHTML='Three kids'; this.classList.add('correct');">
+      How many kids does the dean have?
+    </div>
+    <div class="cell" onclick="this.innerHTML='Green'; this.classList.add('correct');">
+      What is the dean's favorite color?
+    </div>
+  </div>
+</body>
+</html>
